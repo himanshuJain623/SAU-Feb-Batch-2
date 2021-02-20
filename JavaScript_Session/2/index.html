@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Question 2</h1>
+    <form onsubmit="submitForm(event)">
+        <label>First name</label>
+        <input type="text" id="fname" name="first name"  />
+        <label id="vfname" class="error-msg"></label><br /><br />
+
+        <label>Last name</label>
+        <input type="text" id="lname" name="last name"  />
+        <label id="vlname" class="error-msg"></label><br /><br />
+
+        <label>Age</label>
+        <input type="number" id="age" name="age"  />
+        <label id="vage" class="error-msg"></label><br /><br />
+
+        <label>Gender</label>
+        <input type="radio" name="gender" id="gender" value="male"  />Male
+        <input type="radio" name="gender" id="gender" value="female"  />Female
+        <input type="radio" name="gender" id="gender" value="other"  />Other
+        <label id="vgender" class="error-msg"></label><br /><br />
+
+        <label>Roll number</label>
+        <input type="number" id="rno" name="roll number"  />
+        <label id="vrno" class="error-msg"></label><br /><br />
+
+        <label>Date of birth</label>
+        <input type="date" id="dob" name="date of birth"  />
+        <label id="vdob" class="error-msg"></label><br /><br />
+
+        <label>Occupation</label>
+        <input type="text" id="occ" name="Occupation"  />
+        <label id="vocc" class="error-msg"></label><br /><br />
+
+        <input type="submit">
+        <p id="form-status"></p><br>
+
+        Fetch Details: <input type="number" id="fetch-no" placeholder="type roll number"/>
+        <button type="button" onclick="fetchDetails()">Fetch Details</button>
+
+        <p id="details"></p>
+    </form>
+
+
+    <script src="./index.js" />
+</body>
+
+</html>
