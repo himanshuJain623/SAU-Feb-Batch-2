@@ -1,0 +1,21 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  width: 70%;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+.head-btn {
+  border: none;
+  background: none;
+}

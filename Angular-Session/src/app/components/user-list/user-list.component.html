@@ -1,0 +1,32 @@
+<div>
+    <h1>Add User</h1>
+    <app-user-form (addUser)="addUser($event)"></app-user-form>
+    <h1>User Details</h1>
+    <table>
+        <thead>
+            <tr>
+                <th (click)="sort('firstName')">Firstname&nbsp;<i class="fa fa-sort"></i></th>
+                <th (click)="sort('lastName')">Lastname&nbsp;<i class="fa fa-sort"></i></th>
+                <th (click)="sort('cno')">Contact number&nbsp;<i class="fa fa-sort"></i></th>
+                <th (click)="sort('dob')">Date of birth&nbsp;<i class="fa fa-sort"></i></th>
+                <th (click)="sort('city')">City&nbsp;<i class="fa fa-sort"></i></th>
+                <th (click)="sort('pincode')">Pin code&nbsp;<i class="fa fa-sort"></i></th>
+                <th>Actions</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of usersList | orderBy:key:reverse">
+                <td>{{user.firstName}}</td>
+                <td>{{user.lastName}}</td>
+                <td>{{user.contactNumber}}</td>
+                <td>{{user.dateOfBirth | date}}</td>
+                <td>{{user.city}}</td>
+                <td>{{user.pinCode}}</td>
+                <td><button type="button" (click)="deleteUser(user)">del</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>

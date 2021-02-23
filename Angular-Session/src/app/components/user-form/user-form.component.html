@@ -1,0 +1,52 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>First Name:</label>
+    <input type="text" formControlName="firstName">
+    <span *ngIf="profileForm.controls['firstName'].errors && profileForm.controls['firstName'].touched"
+        class="error-msg">
+        <span [hidden]="!profileForm.controls['firstName'].errors.required">First Name is required.</span>
+    </span>
+
+    <br><br>
+
+    <label>Last Name:</label>
+    <input type="text" formControlName="lastName">
+    <span *ngIf="profileForm.controls['lastName'].errors && profileForm.controls['lastName'].touched"
+        class="error-msg">
+        <span [hidden]="!profileForm.controls['lastName'].errors.required">Last Name is required.</span>
+    </span>
+    <br><br>
+
+    <label>Contact Number:</label>
+    <input type="number" formControlName="contactNumber">
+    <span *ngIf="profileForm.controls['contactNumber'].errors && profileForm.controls['contactNumber'].touched"
+        class="error-msg">
+        <span [hidden]="!profileForm.controls['contactNumber'].errors.required">Contact number is required.</span>
+    </span>
+    <br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" formControlName="dateOfBirth">
+    <span *ngIf="profileForm.controls['dateOfBirth'].errors && profileForm.controls['dateOfBirth'].touched"
+        class="error-msg">
+        <span [hidden]="!profileForm.controls['dateOfBirth'].errors.required">Date of Birth is required.</span>
+    </span>
+    <br><br>
+
+    <label>City:</label>
+    <input type="text" formControlName="city">
+    <span *ngIf="profileForm.controls['city'].errors && profileForm.controls['city'].touched"
+        class="error-msg">
+        <span [hidden]="!profileForm.controls['city'].errors.required">City is required.</span>
+    </span>
+    <br><br>
+
+    <label>Pincode:</label>
+    <input type="number" formControlName="pinCode">
+    <span *ngIf="profileForm.controls['pinCode'].errors && profileForm.controls['pinCode'].touched"
+        class="error-msg">
+        <span [hidden]="!profileForm.controls['pinCode'].errors.required">Pin code is required.</span>
+    </span>
+    <br><br>
+
+    <input type="submit" [disabled]="!profileForm.valid">
+</form>

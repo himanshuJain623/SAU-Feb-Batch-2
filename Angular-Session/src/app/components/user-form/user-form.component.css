@@ -1,0 +1,44 @@
+label {  
+  margin-right: 1rem;
+  color: #607d8b;
+  font-weight: bold;
+}
+
+input {
+  height: 1.5em;
+  font-size: 1em;
+  padding-left: 0.4em;
+}
+
+button {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+
+
+/*  */
+.error-msg{
+  margin-left: 1rem;
+  color: red;
+}
+
+
+
+
+
+
