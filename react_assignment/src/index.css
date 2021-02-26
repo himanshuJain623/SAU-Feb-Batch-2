@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #4b145b;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  margin: 1rem auto;
+  width: 80vw;
+  display: block;
+  background-color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 0.25rem;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.books-container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 1rem;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+.search-container input {
+  width: 50rem;
+  line-height: 2rem;
+  border-radius: 1rem;
+}
+
+.card {
+  padding: 0.5rem;
+  padding-bottom: 0;
+  background-color: #f5eded;
+  border-radius: 0.25rem;
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card img {
+  width: 150px;
+  object-fit: contain;
+}
+.card-author {
+  color: gray;
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.card-btn{
+  margin: 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-container{
+  margin: 2rem auto;
+  text-align: center;
+  width: 100%;
+}
+.navigate-btn {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+  /* margin: 2rem auto; */
+  text-align: center;
+}
+
+/* SINGLE BOOK */
+.bookHeading{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.img-container{
+  display: flex;
+  margin: 2rem 0;
+}
+.book-img{
+  width: 180px;
+  object-fit: contain;
+  display: block;
+  margin-right: 1.5rem;
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+}
+.book-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
