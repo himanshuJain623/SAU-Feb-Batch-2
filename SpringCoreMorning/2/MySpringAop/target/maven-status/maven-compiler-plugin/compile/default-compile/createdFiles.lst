@@ -1,0 +1,5 @@
+com\himanshu\MySpringAop\model\Triangle.class
+com\himanshu\MySpringAop\Aspect\LoggingAspect.class
+com\himanshu\MySpringAop\App.class
+com\himanshu\MySpringAop\model\Circle.class
+com\himanshu\MySpringAop\service\ShapeService.class
