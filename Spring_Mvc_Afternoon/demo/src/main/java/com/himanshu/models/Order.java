@@ -1,0 +1,35 @@
+package com.himanshu.models;
+
+import java.util.List;
+
+public class Order {
+	private int orderId;
+	private List<Item> itemList;
+
+	public Order() {
+		super();
+	}
+
+	public Order(int orderId, List<Item> itemList) {
+		super();
+		this.orderId = orderId;
+		this.itemList = itemList;
+	}
+
+	public int getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+
+	public List<Item> getItemList() {
+		return itemList;
+	}
+
+	public void setItemList(List<Item> itemList) {
+		this.itemList = itemList;
+	}
+
+}
